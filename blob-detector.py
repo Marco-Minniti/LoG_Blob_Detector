@@ -57,7 +57,6 @@ def find_Maxima(img,conv_imgs,sigmas,number_scales,threshold):
     row = img.shape[0]
     col = img.shape[1]
     blobs = [] # array that contains the location of the blobs in the image for each scale
-    #no_minimas = 0 
     # For each scale, scrolls through each pixel in the convolved image. 
     # For each pixel, it checks whether the pixel's value is a local maximum by comparing it with the values of neighboring pixels in a 3x3x3 surround (which includes the current scale, the previous scale, and the next scale). 
     # If the pixel value is greater than the threshold and is a local maximum, then it is considered a blob.
